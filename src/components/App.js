@@ -1,11 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom";
-const App = () => {
-  return (
-    <div>
-      <p>React here!</p>
-    </div>
-  );
-};
+import { Link } from "react-router-dom";
+
+import List from "./List";
+
+const App = () => (
+  <>
+    <Link to="/about">About</Link>
+    <List />
+  </>
+);
 export default App;
-ReactDOM.render(<App />, document.getElementById("app"));
